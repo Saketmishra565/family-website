@@ -1,0 +1,81 @@
+/* Hero Section Main Container */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #05010d; /* Deep dark background */
+}
+
+/* Background Glow Animation */
+.motion-background {
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(
+    circle, 
+    rgba(99, 102, 241, 0.15) 0%, 
+    rgba(79, 70, 229, 0.05) 30%, 
+    transparent 70%
+  );
+  animation: pulse 12s ease-in-out infinite alternate;
+  z-index: 0;
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-5%, 5%) scale(1.1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(5%, -5%) scale(1);
+    opacity: 0.6;
+  }
+}
+
+/* Hero Content Z-Index ensure text stays on top */
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* Image Bottom Fade Effect */
+/* Ye photo ko background ke saath niche se smooth merge karega */
+.hero-content img {
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+  .hero-content {
+    text-align: center;
+  }
+  
+  /* Mobile par photo ko thoda chhota karne ke liye */
+  .hero-content img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Hover Effect for Tech Badges (Glassmorphism look) */
+.hero-content span {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.hero-content span:hover {
+  transform: translateY(-3px);
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.2);
+}
