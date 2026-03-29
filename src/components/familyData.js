@@ -124,18 +124,41 @@ export const events = [
 ];
 
 export const memories = [
-    { 
-      id: 1, 
-      title: "Family Trip", 
-      image: "/gallery1.jpg", 
-      category: "Trip", 
-      description: "इंदौर से उज्जैन की यादगार यात्रा।" 
-    },
-    { 
-      id: 2, 
-      title: "Birthday Celebration", 
-      image: "/gallery2.jpg", 
-      category: "Birthday", 
-      description: "घर पर मनाया गया खुशियों भरा जन्मदिन।" 
-    }
+  // --- PHOTOS ---
+  { 
+    id: 1, 
+    type: "photo", // Batata hai ki ye photo hai
+    category: "Wedding Card",
+    title: "Rashu Ki Shadi", 
+    image: "/shadi.png", // Photo ka path
+    description: "rashu ki shadi ke khushiyon bhare pal, jise humesha yaad rakha jayega." 
+  },
+  { 
+    id: 2, 
+    type: "photo", 
+    title: "Birthday Celebration", 
+    image: "/gallery2.jpg", 
+    category: "Birthday", 
+    description: "घर पर मनाया गया खुशियों भरा जन्मदिन।" 
+  },
+  
+  // --- VIDEOS ---
+  { 
+    id: 3, 
+    type: "video", // Batata hai ki ye video hai
+    title: "Holi Dance", 
+    image: "/holi_thumb.jpg", // Video ki Thumbnail Photo (Zaroori hai)
+    videoUrl: "/holi_dance.mp4", // Video file ka path (MP4)
+    category: "Festival", 
+    description: "होली के रंग, परिवार के संग — मस्ती और डांस।" 
+  },
+  { 
+    id: 4, 
+    type: "video", 
+    title: "Rashu ki Shadi - Teaser", 
+    image: "/shadi_thumb.jpg", // Video Thumbnail
+    videoUrl: "/shadi_teaser.mp4", // Video Path
+    category: "Wedding", 
+    description: "आने वाले मंगल उत्सव की एक झलक।" 
+  }
 ];
