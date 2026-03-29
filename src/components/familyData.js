@@ -1,126 +1,126 @@
 // src/familyData.js
 
 export const familyConfig = {
-    surname: "Mishra Family",
+    surname: "गौतम परिवार", // Aapne Gautam kaha tha, toh yahan change kar diya
     motto: "Sada Sahayate - Hamesha Ek Saath",
-    heroImage: "/family.jpg",     heroImage: "/family2.jpg"
+    heroImage: "/family2.jpg" // Ek hi image rakhi hai duplicate hatane ke liye
 };
 
 export const members = [
     {
         id: 1,
-        name: "Hanuman prasad",
-        role: "kakka (Head)",
+        name: "Hanuman Prasad",
+        role: "Kakka (Head)",
         image: "/hanuman.png",
-        bio: "इनके मार्गदर्शन मे परिवार आगे बढ़ रहा है"
+        bio: "इनके मार्गदर्शन में परिवार आगे बढ़ रहा है।"
     },
     {
         id: 2,
         name: "Priya",
         role: "घर की बड़ी बिटिया",
         image: "/priya.png",
-        bio: "परिवार की शान और खुशियों का ख्याल रखने में मदद करती हैं"
+        bio: "परिवार की शान और खुशियों का ख्याल रखने में मदद करती हैं।"
     },
     {
         id: 3,
-        name: "Rajendra prasad",
+        name: "Rajendra Prasad",
         role: "मार्गदर्शक",
         image: "/rajendra.png",
-        bio: "परिवार की नींव मजबूत करने में मदद करते हैं"
+        bio: "परिवार की नींव मजबूत करने में मदद करते हैं।"
     },
     {
         id: 4,
-        name: "Sunita mishra",
+        name: "Sunita Mishra",
         role: "परिवार की धुरी",
         image: "/sunita.png",
-        bio: "परिवार की नींव मजबूत करने में मदद करते हैं"
+        bio: "ममता और स्नेह से पूरे परिवार को जोड़कर रखती हैं।"
     },
     {
         id: 5,
-        name: "Vidya mishra",
+        name: "Vidya Mishra",
         role: "परिवार की धुरी",
         image: "/vidya.png",
-        bio: "परिवार की नींव मजबूत करने में मदद करते हैं"
+        bio: "घर की खुशहाली और अनुशासन का आधार हैं।"
     },
     {
         id: 6,
-        name: "Rajan mishra",
+        name: "Rajan Mishra",
         role: "मार्गदर्शक",
         image: "/rajan.png",
-        bio: "परिवार को एक साथ रखने में मदद करते हैं"
+        bio: "परिवार को एक साथ रखने में महत्वपूर्ण भूमिका निभाते हैं।"
     },
     {
         id: 7,
-        name: "Manisha mishra",
+        name: "Manisha Mishra",
         role: "घर की बड़ी बहू",
         image: "/manisha.png",
-        bio: "परिवार की खुशियों का ख्याल रखने में मदद करती हैं"
+        bio: "परिवार की परंपराओं और खुशियों का ख्याल रखती हैं।"
     },
     {
         id: 8,
-        name: "Saket mishra",
-        role: "कार्यकर्ता",
+        name: "Saket Mishra",
+        role: "सॉफ्टवेयर इंजीनियर", // Aapka profession add kar diya
         image: "/saket.png",
-        bio: "परिवार के कार्यों में सहायता करते हैं"
+        bio: "परिवार के डिजिटल कार्यों और प्रगति में सहायता करते हैं।"
     },
     {
         id: 9,
-        name: "riya mishra",
+        name: "Riya Mishra",
         role: "मझली बहू",
         image: "/riya.png",
-        bio: "परिवार की खुशियों का ख्याल रखने में बड़ी बहू की मदद करती हैं"
+        bio: "परिवार की खुशियों में सहयोग और साथ निभाती हैं।"
     },
     {
         id: 10,
-        name: "Abhishek mishra",
+        name: "Abhishek Mishra",
         role: "कार्यकर्ता",
         image: "/abhishek.png",
-        bio: "परिवार के कार्यों में सहायता करते हैं"
+        bio: "परिवार के हर छोटे-बड़े कार्यों में बढ़-चढ़कर हिस्सा लेते हैं।"
     },
     {
         id: 11,
-        name: "Rishabh mishra",
+        name: "Rishabh Mishra",
         role: "कार्यकर्ता",
         image: "/rishabh.png",
-        bio: "परिवार के कार्यों में सहायता करते हैं"
+        bio: "उत्साह के साथ परिवार की मदद के लिए हमेशा तैयार रहते हैं।"
     },
     {
         id: 12,
         name: "Pranjali",
         role: "Child",
         image: "/Pranjali.png",
-        bio: "परिवार की प्यारी सी बच्ची"
+        bio: "परिवार की प्यारी सी बच्ची।"
     },
     {
         id: 13,
         name: "Angel",
         role: "Child",
         image: "/angel.png",
-        bio: "परिवार की प्यारी सी बच्ची"
+        bio: "घर की नन्हीं परी और खुशियों की वजह।"
     },
     {
         id: 14,
         name: "Navya",
-        role: "child",
+        role: "Child",
         image: "/navya.png",
-        bio: "परिवार की प्यारी सी बच्ची"
+        bio: "अपनी मासूमियत से सबका मन मोह लेती हैं।"
     },
     {
         id: 15,
         name: "Arohi",
-        role: "child",
+        role: "Child",
         image: "/arohi.png",
-        bio: "परिवार की प्यारी सी बच्ची"
+        bio: "परिवार की सबसे लाड़ली और चंचल बच्ची।"
     }
 ];
 
 export const events = [
     {
         id: 1,
-        title: "Aane Wala Function",
+        title: "Upcoming Wedding",
         image: "/shadi.png",
         date: "3 May 2026",
-        description: "Rashu ki shadi."
+        description: "Rashu की शादी का भव्य आयोजन।"
     }
 ];
 
@@ -130,13 +130,13 @@ export const memories = [
       title: "Family Trip", 
       image: "/gallery1.jpg", 
       category: "Trip", 
-      description: "Indore se Ujjain ki yatra." 
+      description: "इंदौर से उज्जैन की यादगार यात्रा।" 
     },
     { 
       id: 2, 
-      title: "Birthday 2025", 
+      title: "Birthday Celebration", 
       image: "/gallery2.jpg", 
       category: "Birthday", 
-      description: "Ghar par chota sa jashn." 
+      description: "घर पर मनाया गया खुशियों भरा जन्मदिन।" 
     }
 ];
