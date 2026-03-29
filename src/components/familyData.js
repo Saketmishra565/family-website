@@ -88,7 +88,7 @@ export const members = [
         id: 12,
         name: "Pranjali",
         role: "Child",
-        image: "/Pranjali.png",
+        image: "/pranjali.png",
         bio: "परिवार की प्यारी सी बच्ची।"
     },
     {
