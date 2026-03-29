@@ -69,3 +69,18 @@
   opacity: 0.03;
   pointer-events: none;
 }
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.33%); }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 25s linear infinite;
+}
+
+/* Jab mouse upar le jayein toh headline ruk jaye */
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

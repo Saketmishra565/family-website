@@ -1,46 +1,54 @@
 import React, { useEffect } from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-// import Skills from "./components/Skills"; // Family site mein zaroorat nahi
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import WorkExperience from "./components/WorkExperience"; // Hata diya
-// import PracticeProjects from "./components/PracticeProjects"; // Hata diya
+
+// Components Import
+import Ticker from "./components/Ticker";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About"; // Ye aapka Family Members section hai
+import Projects from "./components/Projects"; // Ye Memories Gallery hai
+import Contact from "./components/Contact"; // Ye Guestbook/Events hai
+import Footer from "./components/Footer";
 
 function App() {
+  // AOS Animation ko initialize karne ke liye
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ 
+      duration: 1000,
+      once: true // Animation sirf ek baar chalegi scroll karne par
+    });
   }, []);
 
   return (
-    // Yahan background ko Dark (#05010d) kar diya hai
     <div className="bg-[#05010d] text-white min-h-screen overflow-x-hidden">
+      {/* 1. Sabse upar News Headline Ticker */}
+      <Ticker /> 
+
+      {/* 2. Navigation Bar */}
       <Navbar />
       
-      {/* Home Section */}
+      {/* 3. Hero Section (Welcome screen) */}
       <div id="home">
         <Hero />
       </div>
 
-      {/* Members Section (ID matching with Navbar) */}
+      {/* 4. Family Members Section */}
       <div id="family">
         <About />
       </div>
 
-      {/* Memories Gallery */}
+      {/* 5. Memories Gallery Section */}
       <div id="projects">
         <Projects />
       </div>
 
-      {/* Events & Guestbook */}
+      {/* 6. Events & Contact Section */}
       <div id="contact">
         <Contact />
       </div>
 
+      {/* 7. Footer */}
       <Footer />
     </div>
   );

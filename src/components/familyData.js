@@ -115,13 +115,12 @@ export const members = [
 ];
 
 export const events = [
-    {
-        id: 1,
-        title: "Upcoming Wedding",
-        image: "/shadi.png",
-        date: "3 May 2026",
-        description: "Rashu की शादी का भव्य आयोजन।"
-    }
+  { id: 1, description: "तिलक", date: "गुरूवार 30 अप्रैल" },
+  { id: 2, description: "मण्‍डपाच्‍छादन", date: "शुक्रवार 1 मई" },
+  { id: 3, description: "मातृकापूजन", date: "शनिवार 2 मई" },
+  { id: 4, description: "हल्‍दी / मेंहदी", date: "शनिवार 2 मई" },
+  { id: 5, description: "बारात / पाणिग्रहण", date: "रविवार 3 मई" },
+  { id: 6, description: "वधु प्रवेश", date: "सोमवार 4 मई 2026" }
 ];
 
 export const memories = [

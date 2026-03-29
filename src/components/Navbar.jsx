@@ -20,7 +20,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 w-full z-[100] px-4 py-6 transition-all duration-500">
+    <div className="fixed w-full z-[90] top-[54px] px-4 py-6 transition-all duration-500">
       {/* --- MAIN FLOATING NAV --- */}
       <nav 
         className={`max-w-5xl mx-auto flex justify-between items-center px-6 py-3 rounded-full border transition-all duration-500 
