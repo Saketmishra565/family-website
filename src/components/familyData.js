@@ -157,7 +157,7 @@ export const memories = [
     type: "video", 
     title: "Rashu ki Shadi - Teaser", 
     image: "/shadi_thumb.jpg", // Video Thumbnail
-    videoUrl: "/shadi_teaser.mp4", // Video Path
+    videoUrl: "/videos/teaser.mp4", // Video Path
     category: "Wedding", 
     description: "आने वाले मंगल उत्सव की एक झलक।" 
   }

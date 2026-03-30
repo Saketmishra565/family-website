@@ -1,9 +1,9 @@
 import React from "react";
 import { members } from "./familyData"; 
-import { useTheme } from "../context/ThemeContext"; // Context import kiya
+import { useTheme } from "../context/ThemeContext"; 
 
 const FamilyMembers = () => {
-  const { themeData } = useTheme(); // Current theme ka data nikaala
+  const { themeData } = useTheme(); 
 
   return (
     <section 
@@ -25,7 +25,6 @@ const FamilyMembers = () => {
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
         
-        {/* Header Section */}
         <div className="mb-20">
           <span 
             className="font-bold tracking-[0.4em] uppercase text-[10px] mb-4 block transition-colors duration-1000"
@@ -45,16 +44,14 @@ const FamilyMembers = () => {
           ></div>
         </div>
 
-        {/* --- 3D FLIP GRID --- */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
           {members.map((person) => (
-            <div key={person.id} className="flip-card h-[400px] group">
+            <div key={person.id} className="flip-card h-[400px] group cursor-pointer">
               <div className="flip-card-inner relative w-full h-full transition-transform duration-700 preserve-3d group-hover:rotate-y-180">
                 
                 {/* --- FRONT SIDE --- */}
-                <div className="flip-card-front absolute inset-0 backface-hidden bg-white/[0.02] border border-white/5 p-6 rounded-[2.5rem] flex flex-col items-center justify-center">
+                <div className="flip-card-front absolute inset-0 backface-hidden bg-white/[0.02] border border-white/5 p-6 rounded-[2.5rem] flex flex-col items-center justify-center z-10">
                   <div className="relative w-48 h-48 mb-6 p-2">
-                    {/* Dynamic Gradient Border */}
                     <div 
                       className="absolute inset-0 squircle-mask opacity-40 group-hover:opacity-100 transition-all duration-1000"
                       style={{ backgroundImage: `linear-gradient(to tr, var(--primary-color), #fff)` }}
@@ -73,7 +70,7 @@ const FamilyMembers = () => {
                   <p 
                     className="mt-2 px-3 py-1 rounded-full font-bold text-[9px] uppercase tracking-widest border transition-all duration-1000"
                     style={{ 
-                      backgroundColor: `${themeData.primary}15`, // 15 is for transparency
+                      backgroundColor: `${themeData.primary}15`, 
                       color: 'var(--primary-color)',
                       borderColor: `${themeData.primary}30`
                     }}
@@ -100,7 +97,7 @@ const FamilyMembers = () => {
                     {person.name}
                   </h4>
                   <div className="w-10 h-0.5 my-4 opacity-30" style={{ backgroundColor: 'var(--primary-color)' }}></div>
-                  <p className="text-gray-200 text-base leading-relaxed italic font-serif">
+                  <p className="text-gray-200 text-sm leading-relaxed italic font-serif">
                     "{person.bio}"
                   </p>
                   <button 
