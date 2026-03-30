@@ -22,6 +22,6 @@ export const getAIWelcome = async () => {
     return data.candidates[0].content.parts[0].text;
   } catch (error) {
     console.error("AI Error:", error);
-    return "गौतम परिवार के मंगल उत्सव में आपका हार्दिक स्वागत है!"; 
+    return "गौतम परिवार में आपका हार्दिक स्वागत है जय श्री राम"; 
   }
 };
