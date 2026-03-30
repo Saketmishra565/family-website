@@ -1,3 +1,4 @@
+import WelcomeAI from "./components/WelcomeAI";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -31,6 +32,10 @@ function App() {
       {/* 3. Hero Section (Welcome screen) */}
       <div id="home">
         <Hero />
+      </div>
+
+      <div id="home">
+        <WelcomeAI />
       </div>
 
       {/* 4. Family Members Section */}
