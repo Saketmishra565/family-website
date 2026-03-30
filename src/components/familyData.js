@@ -67,7 +67,7 @@ export const members = [
         id: 9,
         name: "Riya Mishra",
         role: "मझली बहू",
-        image: "/Riya.png",
+        image: "/riya.png",
         bio: "परिवार की खुशियों में सहयोग और साथ निभाती हैं।"
     },
     {
