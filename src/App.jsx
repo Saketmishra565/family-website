@@ -2,6 +2,7 @@ import WelcomeAI from "./components/WelcomeAI";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ParallaxSection from "./components/ParallaxSection";
 
 // Components Import
 import Ticker from "./components/Ticker";
@@ -36,6 +37,10 @@ function App() {
 
       <div id="home">
         <WelcomeAI />
+      </div>
+
+      <div id="home">
+        <ParallaxSection />
       </div>
 
       {/* 4. Family Members Section */}
